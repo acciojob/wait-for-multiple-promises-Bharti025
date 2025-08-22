@@ -4,21 +4,21 @@ function promise1=()=>{
 return new Promise((resolve,reject)=>{
 setTimeout(()=>{
  resolve("Promise 1");
-});
+},1000);
 });
 };
 function promise2=()=>{
 return new Promise((resolve,reject)=>{
 setTimeout(()=>{
  resolve("Promise 2");
-});
+},1500);
 });
 };
 function promise3=()=>{
 return new Promise((resolve,reject)=>{
 setTimeout(()=>{
  resolve("Promise 3");
-});
+},2000);
 });
 }
 Promise.all([promise1(),promise2(),promise3()])
